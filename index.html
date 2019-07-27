@@ -1,59 +1,60 @@
 <!DOCTYPE html>
+
+<!-- 
+    
+You can use HTML, JavaScript, and CSS to complete this project. 
+You can use Bootstrap or SASS if you choose.
+
+User Story #1: ok
+User Story #2: ok
+User Story #3: ok
+User Story #4: ok
+User Story #5: ok
+User Story #6: ok
+User Story #7: ok
+User Story #8: ok
+User Story #9: ok
+User Story #10: ok
+User Story #11: ok
+User Story #12: ok
+User Story #13: ok
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+
+-->
+
+
 <html>
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="./styles.css" />
-        <title>FCC: Tribute Page</title>
+        <title>FCC: Survey Form</title>
     </head>
 
-    <body id='main'>
-        <h1 id='title'>
-            Stanislav Petrov
-        </h1>
-        <p>The man who prevented a Third World War</p>
-        <div id='img-div'>
-            <img id='image'
-                src='./img.jpeg'
-                alt='Stanislav Petrov'
-            />
-            <div id='img-caption'>
-                Stanislav Yevgrafovich Petrov (Russian: Станисла́в Евгра́фович Петро́в; 7 September 1939 – 19 May 2017) 
-                was a lieutenant colonel of the Soviet Air Defence Forces who became known as 
-                "the man who single-handedly saved the world from nuclear war" 
-                for his role in the 1983 Soviet nuclear false alarm incident.
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <section id='form'>
+            <p id="description">Here is a short form to know you better</p>
+        </section>
+        <form action="" method="get" id="survey-form">
+            <div>
+                <label for="name" id="name-label">Enter your name: </label>
+                <input type="text" name="name" id="name" placeholder='Enter your name:' required>
             </div>
-        </div>
-        <div id='tribute-info'>
-            <h3> 1983 Soviet nuclear false alarm incident </h3>
-            <ul>
-                <li>According to the Permanent Mission of the Russian Federation to the UN – on 19 January 2006, over 22 years after the incident – nuclear retaliation requires that multiple sources confirm an attack. In any case, the incident exposed a serious flaw in the Soviet early warning system. Petrov has said that he was neither rewarded nor punished for his actions.</li>
+            <div>
+                <label for="email" id="email-label">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder='Enter your email:' required>
+            </div>
+            <div>
+                <label for="age" id="number-label">Enter your age: </label>
+                <input type="number" name="age" id="number"  min="1" max="125" placeholder='Enter your age:' required>
+            </div>
+            Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+            Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+        </form>
 
-                <li>Had Petrov reported incoming American missiles, his superiors might have launched an assault against the United States, precipitating a corresponding nuclear response from the United States. Petrov declared the system's indication a false alarm. Later, it was apparent that he was right: no missiles were approaching and the computer detection system was malfunctioning. It was subsequently determined that the false alarm had been created by a rare alignment of sunlight on high-altitude clouds above North Dakota and the Molniya orbits of the satellites, an error later corrected by cross-referencing a geostationary satellite.</li>
-                    
-                <li>Petrov later indicated that the influences on his decision included that he was informed a U.S. strike would be all-out, so five missiles seemed an illogical start; that the launch detection system was new and, in his view, not yet wholly trustworthy; that the message passed through 30 layers of verification too quickly; and that ground radar failed to pick up corroborative evidence, even after minutes of delay.However, in a 2013 interview, Petrov said at the time he was never sure that the alarm was erroneous. He felt that his civilian training helped him make the right decision. He said that his colleagues were all professional soldiers with purely military training and, following instructions, would have reported a missile launch if they had been on his shift. </li>
-                    
-                <li>Petrov underwent intense questioning by his superiors about his judgment. Initially, he was praised for his decision. General Yury Votintsev, then commander of the Soviet Air Defense's Missile Defense Units, who was the first to hear Petrov's report of the incident (and the first to reveal it to the public in the 1990s), states that Petrov's "correct actions" were "duly noted". Petrov himself states he was initially praised by Votintsev and promised a reward,but recalls that he was also reprimanded for improper filing of paperwork because he had not described the incident in the war diary.</li>
-                    
-                <li>He received no reward. According to Petrov, this was because the incident and other bugs found in the missile detection system embarrassed his superiors and the influential scientists who were responsible for it, so that if he had been officially rewarded, they would have had to be punished. He was reassigned to a less sensitive post, took early retirement (although he emphasized that he was not "forced out" of the army, as is sometimes claimed by Western sources), and suffered a nervous breakdown.</li>
-                    
-                <li>In a later interview, Petrov stated that the famous red button was never made operational, as military psychologists did not want to put the decision about a nuclear war into the hands of one single person.</li>
-                    
-                <li>The incident became known publicly in 1998 upon the publication of Votintsev's memoirs. Widespread media reports since then have increased public awareness of Petrov's actions.</li>
-                    
-                <li>There is some confusion as to precisely what Petrov's military role was in this incident. Petrov, as an individual, was not in a position where he could single-handedly have launched any of the Soviet missile arsenal. His sole duty was to monitor satellite surveillance equipment and report missile attack warnings up the chain of command; top Soviet leadership would have decided whether to launch a retaliatory attack against the West. But Petrov's role was crucial in providing information to make that decision. According to Bruce Blair, a Cold War nuclear strategies expert and nuclear disarmament advocate, formerly with the Center for Defense Information, "The top leadership, given only a couple of minutes to decide, told that an attack had been launched, would make a decision to retaliate."</li>                 
-            </ul>
-            <cite>
-                Petrov later said "I had obviously never imagined that I would ever face that situation. 
-                It was the first and, as far as I know, also the last time that such a thing had happened, 
-                except for simulated practice scenarios."
-            </cite>
-        </div>
-        <h4>
-            If you have time, you should read more about this incredible story being on his
-            <a id='tribute-link' href='' target='_blank'>
-                Wikipedia entry
-            </a>
-        </h4>
-        
     </body>
 </html>
