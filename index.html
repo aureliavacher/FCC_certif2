@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!-- 
+    
+You can use HTML, JavaScript, and CSS to complete this project. 
+You can use Bootstrap or SASS if you choose.
+
+User Story #1: ok
+User Story #2: ok
+User Story #3: ok
+User Story #4: ok
+User Story #5: ok
+User Story #6: ok
+User Story #7: ok
+User Story #8: ok
+User Story #9: ok
+User Story #10: ok
+User Story #11: ok
+User Story #12: ok
+User Story #13: ok
+User Story #14: ok
+User Story #15: ok
+User Story #16: ok
+
+-->
+
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>FCC: Survey Form</title>
+    </head>
+
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <section id='form'>
+            <p id="description">Here is a short form to know you better</p>
+        </section>
+        <form action="" method="get" id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Enter your name: </label>
+                <input type="text" name="name" id="name" placeholder='Enter your name:' required>
+            </fieldset>
+            <fieldset>
+                <label for="email" id="email-label">Enter your email: </label>
+                <input type="email" name="email" id="email" placeholder='Enter your email:' required>
+            </fieldset>
+            <fieldset>
+                <label for="age" id="number-label">Enter your age: </label>
+                <input type="number" name="age" id="number"  min="1" max="125" placeholder='Enter your age:' required>
+            </fieldset>
+            <fieldset>
+                <label for="language">Which language do you love the most?</label>
+                <select id="dropdown">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="PHP">PHP</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="reason">Why did you start?</label>
+                <input type="radio" name='reason' value="reason1"><label for="reason1">Start to school</label>
+                <input type="radio" name='reason' value="reason2"><label for="reason2">Fall in love with code lately</label>
+                <input type="radio" name='reason' value="reason3"><label for="reason3">I'm just curious</label>
+            </fieldset>
+            <fieldset>
+                <label for="website">Which website(s) do you use in order to learn by yourself?</label>
+                <input type="checkbox" name="website" value='FreeCodeCamp' ><label for="">FreeCodeCamp</label>
+                <input type="checkbox" name="website" value='Academy' ><label for="">Code Academy</label>
+                <input type="checkbox" name="website" value='Open Classroom' ><label for="">Open Classroom</label>
+            </fieldset>
+            <fieldset>
+                <label for="comments">Want to tell us more?</label>
+                <textarea name="comments"
+                rows="5" cols="33" placeholder="Additional comments"></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
